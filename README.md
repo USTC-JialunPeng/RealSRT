@@ -7,17 +7,17 @@ PyTorch implementation of ECCV 2024 paper
 
 ## Introduction
 <div align=center>
-<img src="./teaser.png" width="50%" height="50%">
+<img src="./teaser.png" width="70%" height="70%">
 </div>
 
-*Visualizations of our confidence-based iterative generation process for real-world SR. The iterative process leads to better perceptual quality and improved confidence scores across multiple steps. (Top) The LR input image and the generated HR images. (Bottom) The predicted confidence scores for HR tokens (darker denotes higher confidence scores).*
+*Visualizations of our confidence-based iterative generation process for real-world SR.*
 
 ## Method
 <div align=center>
-<img src="./pipeline">
+<img src="./pipeline.png">
 </div>
 
-*Overview of RealSRT. (Top) RealSRT consists of an image tokenizer, a masked transformer, and a conditional controlling module. The image tokenizer is a pre-trained VQGAN with an encoder $\mathcal{E}$ and a decoder $\mathcal{D}$. The masked transformer iteratively generates HR tokens within $T$ iteration steps. The conditional controlling module employs a trainable encoder $\mathcal{E}'$ and an attention block to utilize the LR image as a condition to control the decoding process. (Bottom) The masked transformer consists of a generator network and a critic network. Both networks are conditioned on LR tokens with self-attention and cross-attention. At each iteration, the generator predicts masked HR tokens, while the critic predicts confidence scores to mask out low-confidence HR tokens for the next iteration.*
+*Overview of RealSRT.*
 
 
 ## Installation
