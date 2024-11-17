@@ -9,7 +9,7 @@ from natsort import natsorted
 
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
-file_path = '/data/RealSRT/results/'
+file_path = '/data/RealSR/results/'
 gt_path = '/data/RealSR/target/'
 
 file_list = natsorted(glob(os.path.join(file_path, '*.png')) + glob(os.path.join(file_path, '*.jpg')))
