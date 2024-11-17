@@ -19,11 +19,14 @@ PyTorch implementation of ECCV 2024 paper
 *Overview of RealSRT.*
 </div>
 
-
 ## Installation
-Clone this repository：
+This implementation based on [BasicSR](https://github.com/XPixelGroup/BasicSR)
+
 ```
-git clone https://github.com/USTC-JialunPeng/RealSRT.git
+git clone https://github.com/USTC-JialunPeng/RealSRT
+cd RealSRT
+pip install -r requirements.txt
+python setup.py develop
 ```
 
 ## Citing
