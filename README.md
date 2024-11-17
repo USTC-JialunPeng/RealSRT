@@ -7,14 +7,14 @@ PyTorch implementation of ECCV 2024 paper
 
 ## Introduction
 <div align=center>
-<img src="./teaser.png" width="70%" height="70%">
+<img src="./figures/teaser.png" width="70%" height="70%">
 
 *Visualizations of our confidence-based iterative generation process for real-world SR.*
 </div>
 
 ## Method
 <div align=center>
-<img src="./pipeline.png">
+<img src="./figures/pipeline.png">
 
 *Overview of RealSRT.*
 </div>
