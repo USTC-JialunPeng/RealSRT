@@ -32,11 +32,11 @@ python setup.py develop
 ## Inference
 1. Download the pre-trained [model](https://drive.google.com/file/d/1e8Ip7m174esI9nGtzD04xFS-3mA6GDOJ/view?usp=sharing) and place it in `./experiments/pretrained_models/`
 
-2. Download the test dataset (e.g., RealSR), place input images in `/data/RealSR/input/` and place target images in `/data/RealSR/target/`
+2. Download the test dataset (e.g., RealSR), place input images in `/data/input/` and place target images (if available) in `/data/target/`
 
 3. Testing
 ```
-python inference_realsrt.py --input /data/RealSR/input/ --output /data/RealSR/results/ --model_path experiments/pretrained_models/net_g_80000.pth
+python inference_realsrt.py --input /data/input/ --output /data/results/ --model_path experiments/pretrained_models/net_g_80000.pth
 ```
 
 4. To reproduce scores in Table 1, run
